@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.mplconfig/
+venv/
+*.py[cod]
+
+# Keep the licensed/source dataset out of version control.
+data/raw/*.xlsx

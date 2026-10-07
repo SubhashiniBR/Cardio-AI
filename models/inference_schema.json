@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "features": [
+    {
+      "feature_name": "Age",
+      "display_name": "Age",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 30,
+      "maximum": 86,
+      "default": 58
+    },
+    {
+      "feature_name": "Weight",
+      "display_name": "Weight",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 48,
+      "maximum": 120,
+      "default": 74
+    },
+    {
+      "feature_name": "Length",
+      "display_name": "Length",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 140,
+      "maximum": 188,
+      "default": 165
+    },
+    {
+      "feature_name": "Sex",
+      "display_name": "Sex",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "Male",
+        "Fmale"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "Male"
+    },
+    {
+      "feature_name": "BMI",
+      "display_name": "BMI",
+      "type": "number",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 18.115412710007302,
+      "maximum": 40.90065778377467,
+      "default": 26.775510204081634
+    },
+    {
+      "feature_name": "DM",
+      "display_name": "DM",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "HTN",
+      "display_name": "HTN",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 1
+    },
+    {
+      "feature_name": "Current Smoker",
+      "display_name": "Current Smoker",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "EX-Smoker",
+      "display_name": "EX-Smoker",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "FH",
+      "display_name": "FH",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "Obesity",
+      "display_name": "Obesity",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "Y",
+        "N"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "Y"
+    },
+    {
+      "feature_name": "CRF",
+      "display_name": "CRF",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "CVA",
+      "display_name": "CVA",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Airway disease",
+      "display_name": "Airway disease",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Thyroid Disease",
+      "display_name": "Thyroid Disease",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "CHF",
+      "display_name": "CHF",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "DLP",
+      "display_name": "DLP",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "Y",
+        "N"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "BP",
+      "display_name": "BP",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 90,
+      "maximum": 190,
+      "default": 130
+    },
+    {
+      "feature_name": "PR",
+      "display_name": "PR",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 50,
+      "maximum": 110,
+      "default": 70
+    },
+    {
+      "feature_name": "Edema",
+      "display_name": "Edema",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "Weak Peripheral Pulse",
+      "display_name": "Weak Peripheral Pulse",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Lung rales",
+      "display_name": "Lung rales",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Systolic Murmur",
+      "display_name": "Systolic Murmur",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Diastolic Murmur",
+      "display_name": "Diastolic Murmur",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Typical Chest Pain",
+      "display_name": "Typical Chest Pain",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 1
+    },
+    {
+      "feature_name": "Dyspnea",
+      "display_name": "Dyspnea",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Function Class",
+      "display_name": "Function Class",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "minimum": 0,
+      "maximum": 3,
+      "default": 0
+    },
+    {
+      "feature_name": "Atypical",
+      "display_name": "Atypical",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Nonanginal",
+      "display_name": "Nonanginal",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "LowTH Ang",
+      "display_name": "LowTH Ang",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Q Wave",
+      "display_name": "Q Wave",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "St Elevation",
+      "display_name": "St Elevation",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "St Depression",
+      "display_name": "St Depression",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "Tinversion",
+      "display_name": "Tinversion",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
+    },
+    {
+      "feature_name": "LVH",
+      "display_name": "LVH",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "Poor R Progression",
+      "display_name": "Poor R Progression",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "Y"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "BBB",
+      "display_name": "BBB",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "LBBB",
+        "RBBB"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "N"
+    },
+    {
+      "feature_name": "FBS",
+      "display_name": "FBS",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 62,
+      "maximum": 400,
+      "default": 98
+    },
+    {
+      "feature_name": "CR",
+      "display_name": "CR",
+      "type": "number",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 0.5,
+      "maximum": 2.2,
+      "default": 1.0
+    },
+    {
+      "feature_name": "TG",
+      "display_name": "TG",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 37,
+      "maximum": 1050,
+      "default": 122
+    },
+    {
+      "feature_name": "LDL",
+      "display_name": "LDL",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 18,
+      "maximum": 232,
+      "default": 100
+    },
+    {
+      "feature_name": "HDL",
+      "display_name": "HDL",
+      "type": "number",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 15.9,
+      "maximum": 111.0,
+      "default": 39.0
+    },
+    {
+      "feature_name": "BUN",
+      "display_name": "BUN",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 6,
+      "maximum": 52,
+      "default": 16
+    },
+    {
+      "feature_name": "ESR",
+      "display_name": "ESR",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 1,
+      "maximum": 90,
+      "default": 15
+    },
+    {
+      "feature_name": "HB",
+      "display_name": "HB",
+      "type": "number",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 8.9,
+      "maximum": 17.6,
+      "default": 13.2
+    },
+    {
+      "feature_name": "K",
+      "display_name": "K",
+      "type": "number",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 3.0,
+      "maximum": 6.6,
+      "default": 4.2
+    },
+    {
+      "feature_name": "Na",
+      "display_name": "Na",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 128,
+      "maximum": 156,
+      "default": 141
+    },
+    {
+      "feature_name": "WBC",
+      "display_name": "WBC",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 3700,
+      "maximum": 18000,
+      "default": 7100
+    },
+    {
+      "feature_name": "Lymph",
+      "display_name": "Lymph",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 7,
+      "maximum": 60,
+      "default": 32
+    },
+    {
+      "feature_name": "Neut",
+      "display_name": "Neut",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 32,
+      "maximum": 89,
+      "default": 60
+    },
+    {
+      "feature_name": "PLT",
+      "display_name": "PLT",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": null,
+      "minimum": 25,
+      "maximum": 742,
+      "default": 210
+    },
+    {
+      "feature_name": "EF-TTE",
+      "display_name": "EF-TTE",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        46,
+        50,
+        55,
+        60
+      ],
+      "minimum": 15,
+      "maximum": 60,
+      "default": 50
+    },
+    {
+      "feature_name": "Region RWMA",
+      "display_name": "Region RWMA",
+      "type": "integer",
+      "category": "clinical",
+      "allowed_options": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "minimum": 0,
+      "maximum": 4,
+      "default": 0
+    },
+    {
+      "feature_name": "VHD",
+      "display_name": "VHD",
+      "type": "categorical",
+      "category": "clinical",
+      "allowed_options": [
+        "N",
+        "mild",
+        "Severe",
+        "Moderate"
+      ],
+      "minimum": null,
+      "maximum": null,
+      "default": "mild"
+    }
+  ]
+}

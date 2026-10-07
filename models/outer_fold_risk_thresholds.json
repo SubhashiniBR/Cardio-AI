@@ -1,0 +1,130 @@
+{
+  "cad": {
+    "1": {
+      "low_max": 0.12504423679708482,
+      "high_min": 0.9506739421700562,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "2": {
+      "low_max": 0.12523096630402575,
+      "high_min": 0.9579883496712562,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "3": {
+      "low_max": 0.31089824747946154,
+      "high_min": 0.925058897048377,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "4": {
+      "low_max": 0.3067461774352822,
+      "high_min": 0.9125012660425788,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "5": {
+      "low_max": 0.11323141999309883,
+      "high_min": 0.9343078285455704,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    }
+  },
+  "lad": {
+    "1": {
+      "low_max": 0.1467180632451431,
+      "high_min": 0.8905670638074059,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "2": {
+      "low_max": 0.1538586311949521,
+      "high_min": 0.872775587410345,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "3": {
+      "low_max": 0.17600396285328063,
+      "high_min": 0.8583771538947724,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "4": {
+      "low_max": 0.19713204665814474,
+      "high_min": 0.8545441975981384,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "5": {
+      "low_max": 0.13518382069964865,
+      "high_min": 0.9000988191147581,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    }
+  },
+  "lcx": {
+    "1": {
+      "low_max": 0.16541178796645586,
+      "high_min": 0.7465042296669211,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "2": {
+      "low_max": 0.1976152235939979,
+      "high_min": 0.7248524497193662,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "3": {
+      "low_max": 0.1893820848601973,
+      "high_min": 0.7474262118963172,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "4": {
+      "low_max": 0.1886441931128502,
+      "high_min": 0.7079089321196079,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "5": {
+      "low_max": 0.1702136556936748,
+      "high_min": 0.7629270439952218,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    }
+  },
+  "rca": {
+    "1": {
+      "low_max": 0.2849494405602373,
+      "high_min": 0.5384563708465614,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "2": {
+      "low_max": 0.3055053599448575,
+      "high_min": 0.48520470575592634,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "3": {
+      "low_max": 0.24550004303455353,
+      "high_min": 0.608744740486145,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "4": {
+      "low_max": 0.27798448802031017,
+      "high_min": 0.5234176811634053,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    },
+    "5": {
+      "low_max": 0.2396170117184111,
+      "high_min": 0.5274029263028733,
+      "method": "median outer-training calibrated probability among observed negative/positive labels",
+      "clinical_cutoff": false
+    }
+  }
+}

@@ -1,0 +1,549 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #080d17;
+  color: #edf2ff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 0%, #14243a 0%, transparent 45%),
+    #080d17;
+}
+
+.topbar {
+  min-height: 78px;
+  padding: 16px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #202b3d;
+  background: rgba(8, 13, 23, 0.88);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4f8cff, #9a6bff);
+}
+
+.brand h1,
+.brand p,
+.welcome h2,
+.welcome-copy,
+.panel h3,
+.section-heading h3 {
+  margin: 0;
+}
+
+.brand h1 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+.brand p {
+  margin-top: 4px;
+  color: #8c9bb3;
+  font-size: 12px;
+}
+
+.demo-status,
+.live-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #34435b;
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: #b9c8df;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f3bd62;
+}
+
+.dashboard {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 38px 5% 28px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #8299bc;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.welcome h2 {
+  font-size: clamp(30px, 4vw, 47px);
+  line-height: 1.12;
+  letter-spacing: -1.7px;
+}
+
+.welcome-copy {
+  max-width: 520px;
+  margin-top: 13px;
+  color: #91a1b9;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.overview-badge {
+  min-width: 205px;
+  padding: 19px;
+  border: 1px solid #263650;
+  border-radius: 16px;
+  background: #101a2a;
+}
+
+.overview-badge span,
+.overview-badge strong,
+.overview-badge small {
+  display: block;
+}
+
+.overview-badge span {
+  color: #8299bc;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.overview-badge strong {
+  margin-top: 9px;
+  font-size: 17px;
+}
+
+.overview-badge small {
+  margin-top: 6px;
+  color: #8393ab;
+  font-size: 11px;
+}
+
+.risk-section {
+  margin-bottom: 28px;
+}
+
+.section-heading,
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading {
+  margin-bottom: 15px;
+}
+
+.section-heading h3,
+.panel h3 {
+  font-size: 17px;
+  letter-spacing: -0.3px;
+}
+
+.demo-note {
+  color: #8191aa;
+  font-size: 11px;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.risk-card,
+.panel {
+  border: 1px solid #243148;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #111c2c, #0d1523);
+}
+
+.risk-card {
+  padding: 18px;
+  min-width: 0;
+}
+
+.risk-card-top,
+.risk-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.risk-card-top {
+  color: #b5c3d9;
+  font-size: 12px;
+}
+
+.risk-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.risk-dot.high {
+  background: #fa7185;
+}
+
+.risk-dot.moderate {
+  background: #f3bd62;
+}
+
+.risk-dot.lower {
+  background: #4bd5a0;
+}
+
+.risk-value {
+  margin: 17px 0 14px;
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -1.5px;
+}
+
+.risk-value span {
+  margin-left: 2px;
+  color: #91a0b7;
+  font-size: 17px;
+}
+
+.risk-track {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #26344a;
+}
+
+.risk-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.risk-fill.high {
+  background: #fa7185;
+}
+
+.risk-fill.moderate {
+  background: #f3bd62;
+}
+
+.risk-fill.lower {
+  background: #4bd5a0;
+}
+
+.risk-card-bottom {
+  flex-wrap: wrap;
+  margin-top: 13px;
+  color: #8595ad;
+  font-size: 10px;
+}
+
+.risk-label {
+  font-weight: 700;
+}
+
+.risk-label.high {
+  color: #fa8b9c;
+}
+
+.risk-label.moderate {
+  color: #f3c777;
+}
+
+.risk-label.lower {
+  color: #62dcb0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  align-items: start;
+  gap: 18px;
+}
+
+.panel {
+  min-width: 0;
+  padding: 20px;
+}
+
+.panel-description {
+  margin: 9px 0 17px;
+  color: #8c9bb3;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.live-tag {
+  padding: 6px 9px;
+  color: #8eb7ff;
+  font-size: 9px;
+}
+
+.heart-canvas {
+  overflow: hidden;
+  border: 1px solid #263650;
+  border-radius: 12px;
+  background: #101827;
+}
+
+.vessel-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.vessel-selector > span {
+  margin-right: auto;
+  color: #9aabc3;
+  font-size: 12px;
+}
+
+.vessel-button {
+  border: 1px solid #34445e;
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: #c6d3e8;
+  background: #111e30;
+  font-size: 12px;
+}
+
+.vessel-button:hover,
+.vessel-button.active {
+  border-color: #6699ff;
+  color: #fff;
+  background: #24416c;
+}
+
+.selection-note {
+  color: #8494ad;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.selection-note strong {
+  color: #a9c6ff;
+}
+
+.side-column {
+  display: grid;
+  gap: 18px;
+}
+
+.patient-form {
+  display: grid;
+  gap: 14px;
+}
+
+.patient-form label {
+  display: grid;
+  gap: 7px;
+  color: #aebdd2;
+  font-size: 11px;
+}
+
+.patient-form input,
+.patient-form select {
+  width: 100%;
+  min-height: 41px;
+  border: 1px solid #30405a;
+  border-radius: 9px;
+  padding: 9px 11px;
+  outline: none;
+  color: #edf2ff;
+  background: #0b1422;
+}
+
+.patient-form input:focus,
+.patient-form select:focus {
+  border-color: #679bff;
+}
+
+.patient-form select option {
+  background: #0b1422;
+}
+
+.primary-button {
+  min-height: 43px;
+  margin-top: 3px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  background: linear-gradient(100deg, #3977e8, #7958db);
+}
+
+.primary-button:hover {
+  filter: brightness(1.12);
+}
+
+.explanation-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px dashed #34445d;
+  border-radius: 12px;
+  background: #0b1422;
+}
+
+.explanation-icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: #a7c4ff;
+  background: #1c3151;
+  font-size: 21px;
+}
+
+.explanation-placeholder strong {
+  font-size: 12px;
+}
+
+.explanation-placeholder p {
+  margin: 5px 0 0;
+  color: #8595ad;
+  font-size: 11px;
+}
+
+.medical-disclaimer {
+  margin-top: 25px;
+  padding: 15px 17px;
+  border: 1px solid #4b3c2c;
+  border-radius: 11px;
+  color: #c2b5a3;
+  background: #201a15;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.medical-disclaimer strong {
+  color: #f0cf9c;
+}
+
+@media (max-width: 1050px) {
+  .risk-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 650px) {
+  .topbar {
+    padding: 14px 5%;
+  }
+
+  .brand p {
+    max-width: 180px;
+  }
+
+  .demo-status {
+    padding: 7px 9px;
+    font-size: 10px;
+  }
+
+  .dashboard {
+    padding-top: 27px;
+  }
+
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .overview-badge {
+    width: 100%;
+  }
+
+  .risk-grid {
+    gap: 10px;
+  }
+
+  .risk-card {
+    padding: 14px;
+  }
+
+  .risk-value {
+    font-size: 29px;
+  }
+
+  .demo-note {
+    display: none;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .side-column {
+    grid-template-columns: 1fr;
+  }
+
+  .heart-canvas canvas {
+    display: block;
+  }
+}

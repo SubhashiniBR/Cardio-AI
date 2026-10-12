@@ -1,5 +1,5 @@
 
-import { useState, Suspense, useMemo } from "react";
+import { useEffect, useState, Suspense, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Center, useGLTF } from "@react-three/drei";
 import "./App.css";
@@ -11,24 +11,68 @@ const DEMO_RISKS = {
   RCA: 29,
 };
 
-function HeartModel() {
-  const { scene } = useGLTF("/models/heart.glb");
+const VESSEL_STYLES = {
+  LAD: { color: "#FF3030", dimColor: "#8F1A1A" },
+  LCX: { color: "#00D9FF", dimColor: "#006E82" },
+  RCA: { color: "#FFD43B", dimColor: "#806A1E" },
+};
+
+function HeartModel({ selectedVessel }) {
+  const { scene } = useGLTF("/models/realistic_human_heart_coronary_arteries.glb");
 
   const model = useMemo(() => {
     const copy = scene.clone(true);
 
     copy.traverse((child) => {
-      if (child.isMesh) {
-        child.material = child.material.clone();
-        if (child.material.color) {
-          child.material.color.set("#c98288");
-        }
-        child.material.roughness = 0.7;
-      }
+      if (!child.isMesh) return;
+
+      const cloneMaterial = (material) => material.clone();
+
+      child.material = Array.isArray(child.material)
+        ? child.material.map(cloneMaterial)
+        : cloneMaterial(child.material);
     });
 
     return copy;
   }, [scene]);
+
+  useEffect(() => {
+    model.traverse((child) => {
+      if (!child.isMesh) return;
+
+      const name = child.name.toLowerCase();
+      const vesselKey = Object.keys(VESSEL_STYLES).find((key) =>
+        name.includes(key.toLowerCase())
+      );
+      const materials = Array.isArray(child.material)
+        ? child.material
+        : [child.material];
+
+      materials.forEach((material) => {
+        if (!material.color) return;
+
+        if (!vesselKey) return;
+
+        const style = VESSEL_STYLES[vesselKey];
+        const isSelected = selectedVessel === vesselKey;
+        material.color.set(isSelected ? style.color : style.dimColor);
+        material.toneMapped = false;
+        material.depthTest = false;
+        material.depthWrite = false;
+        material.polygonOffset = true;
+        material.polygonOffsetFactor = -1;
+        material.polygonOffsetUnits = -1;
+
+        if (material.emissive) {
+          material.emissive.set(isSelected ? style.color : style.dimColor);
+          material.emissiveIntensity = isSelected ? 1.5 : 0.15;
+        }
+
+        material.needsUpdate = true;
+        child.renderOrder = 1;
+      });
+    });
+  }, [model, selectedVessel]);
 
   return (
     <Center>
@@ -186,7 +230,7 @@ function App() {
                 />
 
                 <Suspense fallback={null}>
-                  <HeartModel />
+                  <HeartModel selectedVessel={selectedVessel} />
                 </Suspense>
 
                 <OrbitControls
@@ -213,9 +257,8 @@ function App() {
             </div>
 
             <p className="selection-note">
-              Selected: <strong>{selectedVessel}</strong>. Vessel selection
-              is a dashboard interaction only; this model does not yet
-              highlight individual coronary arteries.
+              Selected: <strong>{selectedVessel}</strong>. The selected coronary
+              artery is highlighted in the 3D model.
             </p>
           </article>
 

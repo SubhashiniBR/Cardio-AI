@@ -7,3 +7,6 @@ venv/
 
 # Keep the licensed/source dataset out of version control.
 data/raw/*.xlsx
+
+# Local teammate archive (do not track)
+Cardio-AI.zip

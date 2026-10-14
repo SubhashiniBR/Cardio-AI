@@ -1,0 +1,279 @@
+{
+  "predictions": {
+    "cad": {
+      "probability": 0.9619263495433324,
+      "risk": "HIGH"
+    },
+    "lad": {
+      "probability": 0.8721923319649696,
+      "risk": "HIGH"
+    },
+    "lcx": {
+      "probability": 0.40348801761865616,
+      "risk": "MODERATE"
+    },
+    "rca": {
+      "probability": 0.5241060468061793,
+      "risk": "MODERATE"
+    }
+  },
+  "explanations": {
+    "cad": [
+      {
+        "feature": "Typical Chest Pain",
+        "display_name": "Typical Chest Pain",
+        "value": 1,
+        "contribution": 0.08202700233640087
+      },
+      {
+        "feature": "Atypical",
+        "display_name": "Atypical",
+        "value": "N",
+        "contribution": 0.07488285128713085
+      },
+      {
+        "feature": "Age",
+        "display_name": "Age",
+        "value": 58,
+        "contribution": 0.02219284855994408
+      },
+      {
+        "feature": "EF-TTE",
+        "display_name": "EF-TTE",
+        "value": 50,
+        "contribution": 0.01584019603764475
+      },
+      {
+        "feature": "HTN",
+        "display_name": "HTN",
+        "value": 1,
+        "contribution": 0.011254934333753464
+      },
+      {
+        "feature": "Nonanginal",
+        "display_name": "Nonanginal",
+        "value": "N",
+        "contribution": 0.007917924548560329
+      },
+      {
+        "feature": "Tinversion",
+        "display_name": "Tinversion",
+        "value": 0,
+        "contribution": -0.006938815975732648
+      },
+      {
+        "feature": "HDL",
+        "display_name": "HDL",
+        "value": 39.0,
+        "contribution": 0.006928872174155387
+      }
+    ],
+    "lad": [
+      {
+        "feature": "Typical Chest Pain",
+        "display_name": "Typical Chest Pain",
+        "value": 1,
+        "contribution": 0.08652354345454732
+      },
+      {
+        "feature": "Atypical",
+        "display_name": "Atypical",
+        "value": "N",
+        "contribution": 0.05488983872413433
+      },
+      {
+        "feature": "Lymph",
+        "display_name": "Lymph",
+        "value": 32,
+        "contribution": 0.02376039876030467
+      },
+      {
+        "feature": "Age",
+        "display_name": "Age",
+        "value": 58,
+        "contribution": 0.022722705186227043
+      },
+      {
+        "feature": "EF-TTE",
+        "display_name": "EF-TTE",
+        "value": 50,
+        "contribution": 0.020200868123412874
+      },
+      {
+        "feature": "PLT",
+        "display_name": "PLT",
+        "value": 210,
+        "contribution": 0.01934705162517114
+      },
+      {
+        "feature": "Length",
+        "display_name": "Length",
+        "value": 165,
+        "contribution": 0.013414723673610185
+      },
+      {
+        "feature": "Region RWMA",
+        "display_name": "Region RWMA",
+        "value": 0,
+        "contribution": -0.01203498401527342
+      }
+    ],
+    "lcx": [
+      {
+        "feature": "CR",
+        "display_name": "CR",
+        "value": 1.0,
+        "contribution": -0.05700964920688423
+      },
+      {
+        "feature": "Na",
+        "display_name": "Na",
+        "value": 141,
+        "contribution": 0.03851687437854709
+      },
+      {
+        "feature": "Typical Chest Pain",
+        "display_name": "Typical Chest Pain",
+        "value": 1,
+        "contribution": 0.03806558398064225
+      },
+      {
+        "feature": "BUN",
+        "display_name": "BUN",
+        "value": 16,
+        "contribution": -0.037490786984562874
+      },
+      {
+        "feature": "Length",
+        "display_name": "Length",
+        "value": 165,
+        "contribution": -0.03363764288369567
+      },
+      {
+        "feature": "HDL",
+        "display_name": "HDL",
+        "value": 39.0,
+        "contribution": 0.025981342908926286
+      },
+      {
+        "feature": "HB",
+        "display_name": "HB",
+        "value": 13.2,
+        "contribution": -0.023747218819335114
+      },
+      {
+        "feature": "Age",
+        "display_name": "Age",
+        "value": 58,
+        "contribution": 0.022566098975948995
+      }
+    ],
+    "rca": [
+      {
+        "feature": "Typical Chest Pain",
+        "display_name": "Typical Chest Pain",
+        "value": 1,
+        "contribution": 0.026653293859379812
+      },
+      {
+        "feature": "Atypical",
+        "display_name": "Atypical",
+        "value": "N",
+        "contribution": 0.024923267803487775
+      },
+      {
+        "feature": "ESR",
+        "display_name": "ESR",
+        "value": 15,
+        "contribution": -0.023501581502313906
+      },
+      {
+        "feature": "Dyspnea",
+        "display_name": "Dyspnea",
+        "value": "N",
+        "contribution": 0.016576941569033332
+      },
+      {
+        "feature": "Sex",
+        "display_name": "Sex",
+        "value": "Male",
+        "contribution": 0.016362575205103286
+      },
+      {
+        "feature": "Lymph",
+        "display_name": "Lymph",
+        "value": 32,
+        "contribution": 0.016270104951451314
+      },
+      {
+        "feature": "DM",
+        "display_name": "DM",
+        "value": 0,
+        "contribution": -0.014058469157690351
+      },
+      {
+        "feature": "BMI",
+        "display_name": "BMI",
+        "value": 26.775510204081634,
+        "contribution": 0.01368305531506972
+      }
+    ]
+  },
+  "measurements": {
+    "Age": 58,
+    "Weight": 74,
+    "Length": 165,
+    "Sex": "Male",
+    "BMI": 26.775510204081634,
+    "DM": 0,
+    "HTN": 1,
+    "Current Smoker": 0,
+    "EX-Smoker": 0,
+    "FH": 0,
+    "Obesity": "Y",
+    "CRF": "N",
+    "CVA": "N",
+    "Airway disease": "N",
+    "Thyroid Disease": "N",
+    "CHF": "N",
+    "DLP": "N",
+    "BP": 130,
+    "PR": 70,
+    "Edema": 0,
+    "Weak Peripheral Pulse": "N",
+    "Lung rales": "N",
+    "Systolic Murmur": "N",
+    "Diastolic Murmur": "N",
+    "Typical Chest Pain": 1,
+    "Dyspnea": "N",
+    "Function Class": 0,
+    "Atypical": "N",
+    "Nonanginal": "N",
+    "LowTH Ang": "N",
+    "Q Wave": 0,
+    "St Elevation": 0,
+    "St Depression": 0,
+    "Tinversion": 0,
+    "LVH": "N",
+    "Poor R Progression": "N",
+    "BBB": "N",
+    "FBS": 98,
+    "CR": 1.0,
+    "TG": 122,
+    "LDL": 100,
+    "HDL": 39.0,
+    "BUN": 16,
+    "ESR": 15,
+    "HB": 13.2,
+    "K": 4.2,
+    "Na": 141,
+    "WBC": 7100,
+    "Lymph": 32,
+    "Neut": 60,
+    "PLT": 210,
+    "EF-TTE": 50,
+    "Region RWMA": 0,
+    "VHD": "mild"
+  },
+  "anatomical_localization": false
+}

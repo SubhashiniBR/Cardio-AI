@@ -1,0 +1,26 @@
+{
+  "cad": {
+    "low_max": 0.11575096322923188,
+    "high_min": 0.9538034478041976,
+    "method": "median final development-fit calibrated probability among observed negative/positive labels",
+    "clinical_cutoff": false
+  },
+  "lad": {
+    "low_max": 0.15958243355841994,
+    "high_min": 0.8692867043975048,
+    "method": "median final development-fit calibrated probability among observed negative/positive labels",
+    "clinical_cutoff": false
+  },
+  "lcx": {
+    "low_max": 0.2110147476196289,
+    "high_min": 0.6885931491851807,
+    "method": "median final development-fit calibrated probability among observed negative/positive labels",
+    "clinical_cutoff": false
+  },
+  "rca": {
+    "low_max": 0.2101074558357479,
+    "high_min": 0.6853415005501196,
+    "method": "median final development-fit calibrated probability among observed negative/positive labels",
+    "clinical_cutoff": false
+  }
+}

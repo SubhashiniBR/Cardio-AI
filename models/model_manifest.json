@@ -1,0 +1,199 @@
+{
+  "seed": 42,
+  "dataset": "data\\raw\\extention of Z-Alizadeh sani dataset.xlsx",
+  "evaluation": "5-fold nested stratified CV; inner 4-fold selection and calibration",
+  "targets": {
+    "cad": {
+      "selected_model_for_deployment": "random_forest",
+      "outer_fold_selection_counts": {
+        "logistic_regression": 2,
+        "random_forest": 2,
+        "xgboost": 1
+      },
+      "inner_full_data_selection_scores": {
+        "logistic_regression": {
+          "roc_auc_mean": 0.9170073753407086,
+          "f1_mean": 0.8917366946778712
+        },
+        "random_forest": {
+          "roc_auc_mean": 0.926547218213885,
+          "f1_mean": 0.9058409719914144
+        },
+        "xgboost": {
+          "roc_auc_mean": 0.9033088824755491,
+          "f1_mean": 0.9103469195836452
+        }
+      },
+      "nested_outer_metrics": {
+        "accuracy_mean": 0.8444808743169399,
+        "accuracy_std": 0.0648760121403722,
+        "accuracy_outer_oof": 0.8448844884488449,
+        "precision_mean": 0.8748643410852713,
+        "precision_std": 0.05950589205979812,
+        "precision_outer_oof": 0.8722466960352423,
+        "recall_mean": 0.9165961945031713,
+        "recall_std": 0.05611056986503564,
+        "recall_outer_oof": 0.9166666666666666,
+        "f1_mean": 0.8938678548981832,
+        "f1_std": 0.043058787247258305,
+        "f1_outer_oof": 0.8939051918735892,
+        "roc_auc_mean": 0.919112465282096,
+        "roc_auc_std": 0.05429454280781332,
+        "roc_auc_outer_oof": 0.9034695615155386,
+        "brier_score_mean": 0.10699853371403947,
+        "brier_score_std": 0.04086499987163696,
+        "brier_score_outer_oof": 0.10675172463499918
+      },
+      "risk_thresholds": {
+        "low_max": 0.11575096322923188,
+        "high_min": 0.9538034478041976,
+        "method": "median final development-fit calibrated probability among observed negative/positive labels",
+        "clinical_cutoff": false
+      }
+    },
+    "lad": {
+      "selected_model_for_deployment": "random_forest",
+      "outer_fold_selection_counts": {
+        "logistic_regression": 0,
+        "random_forest": 5,
+        "xgboost": 0
+      },
+      "inner_full_data_selection_scores": {
+        "logistic_regression": {
+          "roc_auc_mean": 0.7912370937194526,
+          "f1_mean": 0.7681155466570512
+        },
+        "random_forest": {
+          "roc_auc_mean": 0.8362936318833496,
+          "f1_mean": 0.8298703928227947
+        },
+        "xgboost": {
+          "roc_auc_mean": 0.8128962253584229,
+          "f1_mean": 0.8088931165293158
+        }
+      },
+      "nested_outer_metrics": {
+        "accuracy_mean": 0.7924590163934426,
+        "accuracy_std": 0.058613276137987204,
+        "accuracy_outer_oof": 0.7920792079207921,
+        "precision_mean": 0.7898913859974552,
+        "precision_std": 0.05210642825089041,
+        "precision_outer_oof": 0.7878787878787878,
+        "recall_mean": 0.8819047619047617,
+        "recall_std": 0.052535246539820724,
+        "recall_outer_oof": 0.8813559322033898,
+        "f1_mean": 0.8326614565429237,
+        "f1_std": 0.045334007803100686,
+        "f1_outer_oof": 0.832,
+        "roc_auc_mean": 0.8572429792429792,
+        "roc_auc_std": 0.06113947332800975,
+        "roc_auc_outer_oof": 0.8487131198995606,
+        "brier_score_mean": 0.15282561527077965,
+        "brier_score_std": 0.028604905171393063,
+        "brier_score_outer_oof": 0.1529294445746426
+      },
+      "risk_thresholds": {
+        "low_max": 0.15958243355841994,
+        "high_min": 0.8692867043975048,
+        "method": "median final development-fit calibrated probability among observed negative/positive labels",
+        "clinical_cutoff": false
+      }
+    },
+    "lcx": {
+      "selected_model_for_deployment": "xgboost",
+      "outer_fold_selection_counts": {
+        "logistic_regression": 0,
+        "random_forest": 4,
+        "xgboost": 1
+      },
+      "inner_full_data_selection_scores": {
+        "logistic_regression": {
+          "roc_auc_mean": 0.6938780609695152,
+          "f1_mean": 0.5658438180177311
+        },
+        "random_forest": {
+          "roc_auc_mean": 0.7445839580209895,
+          "f1_mean": 0.5463979416809605
+        },
+        "xgboost": {
+          "roc_auc_mean": 0.7517303848075962,
+          "f1_mean": 0.5600351592647997
+        }
+      },
+      "nested_outer_metrics": {
+        "accuracy_mean": 0.692896174863388,
+        "accuracy_std": 0.06412330234625556,
+        "accuracy_outer_oof": 0.693069306930693,
+        "precision_mean": 0.6496924128503074,
+        "precision_std": 0.1310458732511758,
+        "precision_outer_oof": 0.6382978723404256,
+        "recall_mean": 0.5043478260869565,
+        "recall_std": 0.05972219169315809,
+        "recall_outer_oof": 0.5042016806722689,
+        "f1_mean": 0.5650666421546098,
+        "f1_std": 0.07866157162912364,
+        "f1_outer_oof": 0.5633802816901409,
+        "roc_auc_mean": 0.729084247290769,
+        "roc_auc_std": 0.07540922316638013,
+        "roc_auc_outer_oof": 0.729950675922543,
+        "brier_score_mean": 0.2046246057758471,
+        "brier_score_std": 0.020242768095216284,
+        "brier_score_outer_oof": 0.20454764099418382
+      },
+      "risk_thresholds": {
+        "low_max": 0.2110147476196289,
+        "high_min": 0.6885931491851807,
+        "method": "median final development-fit calibrated probability among observed negative/positive labels",
+        "clinical_cutoff": false
+      }
+    },
+    "rca": {
+      "selected_model_for_deployment": "random_forest",
+      "outer_fold_selection_counts": {
+        "logistic_regression": 4,
+        "random_forest": 0,
+        "xgboost": 1
+      },
+      "inner_full_data_selection_scores": {
+        "logistic_regression": {
+          "roc_auc_mean": 0.674769579970653,
+          "f1_mean": 0.5379183706569969
+        },
+        "random_forest": {
+          "roc_auc_mean": 0.697250135380638,
+          "f1_mean": 0.4500576416337286
+        },
+        "xgboost": {
+          "roc_auc_mean": 0.671459577961779,
+          "f1_mean": 0.47469387755102044
+        }
+      },
+      "nested_outer_metrics": {
+        "accuracy_mean": 0.656830601092896,
+        "accuracy_std": 0.026095399416445272,
+        "accuracy_outer_oof": 0.6567656765676567,
+        "precision_mean": 0.5694877344877345,
+        "precision_std": 0.03254554520476982,
+        "precision_outer_oof": 0.5675675675675675,
+        "recall_mean": 0.3691699604743083,
+        "recall_std": 0.1609574300451549,
+        "recall_outer_oof": 0.3684210526315789,
+        "f1_mean": 0.4300887392900856,
+        "f1_std": 0.12951989488259188,
+        "f1_outer_oof": 0.44680851063829785,
+        "roc_auc_mean": 0.6907927065821803,
+        "roc_auc_std": 0.017481652651853693,
+        "roc_auc_outer_oof": 0.6828181565023671,
+        "brier_score_mean": 0.21340147982738045,
+        "brier_score_std": 0.006460563851906788,
+        "brier_score_outer_oof": 0.21342849816979162
+      },
+      "risk_thresholds": {
+        "low_max": 0.2101074558357479,
+        "high_min": 0.6853415005501196,
+        "method": "median final development-fit calibrated probability among observed negative/positive labels",
+        "clinical_cutoff": false
+      }
+    }
+  }
+}

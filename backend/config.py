@@ -13,13 +13,15 @@ THRESHOLDS_PATH = MODEL_DIR / "risk_thresholds.json"
 SCHEMA_PATH = MODEL_DIR / "inference_schema.json"
 BACKGROUND_PATH = MODEL_DIR / "background_features.joblib"
 MODEL_PATHS = {name: MODEL_DIR / f"{name}_model.joblib" for name in TARGETS}
-CORS_ORIGINS = tuple(
+DEPLOYED_FRONTEND_ORIGIN = "https://cardio-ai-jte7.onrender.com"
+_configured_cors_origins = (
     origin.strip()
     for origin in os.environ.get(
         "CARDIO_AI_CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173"
     ).split(",")
     if origin.strip()
 )
+CORS_ORIGINS = tuple(dict.fromkeys((*_configured_cors_origins, DEPLOYED_FRONTEND_ORIGIN)))
 
 
 def load_risk_thresholds() -> dict:

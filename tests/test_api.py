@@ -49,3 +49,9 @@ def test_cors_restricts_to_configured_frontend_origins():
         "Origin": "https://untrusted.example", "Access-Control-Request-Method": "POST",
     })
     assert "access-control-allow-origin" not in rejected.headers
+
+    deployed = client.options("/predict", headers={
+        "Origin": "https://cardio-ai-jte7.onrender.com",
+        "Access-Control-Request-Method": "POST",
+    })
+    assert deployed.headers.get("access-control-allow-origin") == "https://cardio-ai-jte7.onrender.com"

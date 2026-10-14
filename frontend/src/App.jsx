@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls, useGLTF } from "@react-three/drei";
 import "./App.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = (import.meta.env.VITE_API_BASE_URL?.trim() || "http://127.0.0.1:8000").replace(/\/+$/, "");
 
 const RISK_INFO = [
   { key: "cad", label: "Overall CAD", short: "CAD", color: "#B7A5F5", description: "Coronary artery disease" },
